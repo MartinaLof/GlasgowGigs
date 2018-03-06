@@ -7,7 +7,7 @@ Step-by-step set up of a branch:
 	5.	git branch 
 		a.	Change to a desired branch 
 	6.	git checkout NAME_branch 
-	7.	git add *
+	7.	git add * OR git add . (for Mac) 
 		a.	To check status 
 	8.	git status 
 	9.	git commit -m "something"
