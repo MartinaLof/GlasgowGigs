@@ -4,7 +4,9 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world! You're at the Gigs index.")
+    context_dict = {'boldmessage': "Crunch, creamy, cookie, candy, cupcake!"}
+    return render(request, 'glasgowgigs/index.html', context=context_dict)
 
 def about(request):
-    return HttpResponse("This is the about page. Created by lab group 4 team d.")
+    context_dict = {}
+    return render(request, 'glasgowgigs/about.html', context=context_dict)

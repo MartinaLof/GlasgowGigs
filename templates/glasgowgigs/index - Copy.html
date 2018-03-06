@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+
+    <head>
+        <title>GlasgowGigs</title>
+    </head>
+
+    <body>
+        <h1>GlasgowGigs</h1>
+        <div>
+        here you can see all the upcoming gigs in Glasgow. <br />
+            <strong>{{ boldmessage }}</strong><br />
+        </div>
+
+        <div>
+            <a href = "/glasgowgigs/about/">About</a><br />
+            <img src="{% static "images/gigs.jpg" %}"
+            alt="Image of gig" />
+        </div>
+    </body>
+
+</html>
